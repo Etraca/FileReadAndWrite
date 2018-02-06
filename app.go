@@ -40,6 +40,9 @@ func readFile(path string) string {
 	return string(data)
 }
 
+/**
+	os open file read
+ */
 func osOpenAndRead(path string) {
 	file, err := os.Open(path)
 	defer file.Close()
@@ -52,7 +55,9 @@ func osOpenAndRead(path string) {
 	log.Println(string(b),n)
 }
 
-
+/**
+	os open file write
+ */
 func osOpenAndWrite(path string,content string){
 	file, err := os.Create(path)
 	check(err)

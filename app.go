@@ -16,6 +16,10 @@ func main() {
 
 	osOpenAndRead(path)
 }
+
+/**
+	校验异常
+ */
 func check(e error) {
 	if e != nil {
 		panic(e)
